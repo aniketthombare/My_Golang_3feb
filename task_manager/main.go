@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"task_manager/manager"
-	"task_manager/storage"
+	"github.com/aniketthombare/My_Go_1/task_manager/manager"
+	"github.com/aniketthombare/My_Go_1/task_manager/storage"
 )
 
 const (

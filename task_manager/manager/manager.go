@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
-	"task_manager/storage"
-	"task_manager/task"
+	"github.com/aniketthombare/My_Go_1/task_manager/storage"
+	"github.com/aniketthombare/My_Go_1/task_manager/task"
 )
 
 type Manager struct {
@@ -26,7 +26,7 @@ func New(storage storage.Storage) (*Manager, error) {
 
 	m := &Manager{
 		storage: storage,
-		tasks:   tasks,
+		tasks:   tasks.([]task.Task),
 		taskMap: make(map[int]*task.Task),
 	}
 

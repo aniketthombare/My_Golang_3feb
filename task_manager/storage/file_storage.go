@@ -5,8 +5,7 @@ import (
 	"errors"
 	"io"
 	"os"
-
-	"My_Golang_3feb/task_manager/task"
+	"task_manager/task"
 )
 
 type FileStorage struct {
